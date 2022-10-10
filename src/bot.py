@@ -13,7 +13,7 @@ import time
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+TOKEN = os.environ('BOT_TOKEN')
 
 client = discord.Client()
 
