@@ -3,4 +3,5 @@
 .npmrc
 .vscode/
 node_modules/
-data/
+data/secrets.json
+secrets.json

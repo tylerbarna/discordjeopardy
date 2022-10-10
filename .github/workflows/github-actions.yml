@@ -1,4 +1,7 @@
-name: jeoparpy
-  env:
-    BOT_TOKEN: ${{secrets.BOT_TOKEN}}
-  run: python /src/bot.py
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      run: python3 bot.py
+      env:
+        BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
