@@ -13,9 +13,9 @@ import time
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.environ('BOT_TOKEN')
+TOKEN = os.getenv('BOT_TOKEN')
 
-client = discord.Client()
+client = discord.Client(intents=discord.Intents.default())
 
 @client.event
 async def on_ready():
